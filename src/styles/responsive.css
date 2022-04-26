@@ -1,0 +1,99 @@
+@media screen and (max-width: 599px) {
+	.headernav {
+		z-index: 10;
+		background-color: #fff;
+		width: 100%;
+		position: absolute;
+		transition: all 0.3s;
+        top: -500px;
+	}
+	.menu_toggle {
+		min-width: 44px;
+	}
+	.open {
+		top: 60px;
+	}
+	.navitem {
+		display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+		color: black;
+	}
+	.navitem a {
+		font-size: 28px;
+	}
+	.restaurant {
+		padding: 0;
+	}
+	.form-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+	.jumbotron {
+        background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('../images/hero-image_4-small.jpg');
+    }
+}
+@media screen and (min-width: 650px) {
+	.menu_toggle {
+		display: none;
+	}
+	.mainitem {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 4px;
+		grid-row-gap: 4px
+	}
+	.form-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+}
+@media screen and (min-width: 700px) {
+	.mainitem {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 16px
+	}
+	.restaurantmenu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+}
+@media screen and (min-width: 900px) {
+	.mainitem {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr
+	}
+	.navlist {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 920px) {
+	.headerinfo {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-column-gap: 20px;
+	}
+	.restaurant {
+		font-size: larger;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.maincontent {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.detail {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
